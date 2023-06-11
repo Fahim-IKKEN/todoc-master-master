@@ -35,7 +35,7 @@ import androidx.lifecycle.ViewModelProvider;
 /**
  * Cette classe représente l'activité principale de l'application Android
  * et est responsable de l'affichage de l'interface utilisateur
- * et de la gestion des événements de suppression de tâche provenant de l'adaptateur.
+ * et de la gestion des événements provenant de l'adaptateur.
  */
 public class MainActivity extends AppCompatActivity implements TasksAdapter.DeleteTaskListener {
 

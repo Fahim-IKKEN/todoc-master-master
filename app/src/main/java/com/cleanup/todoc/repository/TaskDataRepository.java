@@ -13,6 +13,10 @@ import java.util.List;
  * Elle utilise un objet TaskDao pour interagir avec la source de données des tâches
  * et expose des méthodes pour obtenir, créer et supprimer des tâches.
  */
+
+// Le Repository encapsule la logique de récupération et de gestion des données provenant de différentes
+// sources telles que des bases de données, des services Web ou des caches.
+// Favorise une bonne séparation des responsabilités
 public class TaskDataRepository {
 
     private final TaskDao mTaskDao;

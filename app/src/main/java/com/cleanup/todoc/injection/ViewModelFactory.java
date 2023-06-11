@@ -14,6 +14,9 @@ import java.util.concurrent.Executor;
 /**
  * La Factory pour ViewModels indispensable pour que le ViewModel puisse accéder à la source de données
  */
+
+// Elle fournit une interface pour créer des objets d'un type donné,
+// tout en cachant les détails de l'implémentation et de l'instanciation.
 public class ViewModelFactory implements ViewModelProvider.Factory {
 
     /**

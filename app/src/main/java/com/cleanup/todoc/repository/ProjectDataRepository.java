@@ -13,6 +13,10 @@ import java.util.List;
  *  et expose une méthode getProjects() qui retourne un objet LiveData<List<Project>>
  *  contenant la liste des projets.
  */
+
+// Le Repository encapsule la logique de récupération et de gestion des données provenant de différentes
+// sources telles que des bases de données, des services Web ou des caches.
+// Favorise une bonne séparation des responsabilités
 public class ProjectDataRepository {
     private final ProjectDao mProjectDao;
 
