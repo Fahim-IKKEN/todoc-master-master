@@ -13,13 +13,11 @@ import java.util.List;
 import java.util.concurrent.Executor;
 
 /**
- * Cette classe utilise les repositories de manière à proposer des méthodes getTasks ou encore getProjects.
- * Son constructeur permet de passer les repositories.
+ * Cette classe sert d'intermédiaire entre la vue et le modèle.
+ * Elle fournit des méthodes pour accéder aux données des projets et des tâches de manière observable,
+ * ainsi que des méthodes pour créer et supprimer des tâches de manière asynchrone.
+ * Elle est utilisée pour gérer la logique métier liée aux tâches et aux projets dans l'application.
  */
-
-// Le ViewModel agit comme un lien entre la vue et le modèle.
-// Il contient la logique métier de l'application et expose les données nécessaires à l'affichage dans la vue.
-// Il communique avec le modèle pour récupérer ou mettre à jour les données.
 public class TaskViewModel extends ViewModel {
 
     // Références à des sources de données pour les projets et les tâches (Repositories)

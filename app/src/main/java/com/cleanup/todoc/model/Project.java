@@ -8,7 +8,10 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 /**
- * Modèle de projet dans lequel des tâches sont incluses.
+ * Cette classe représente un modèle de projet dans l'application et fournit des méthodes pour accéder
+ * aux informations du projet, telles que son identifiant, son nom et sa couleur.
+ * Elle offre également des méthodes pour récupérer tous les projets de l'application
+ * et pour trouver un projet spécifique par son identifiant..
  */
 @Entity(tableName = "project") // Marque cette classe en tant qu'entité.
 public class Project {

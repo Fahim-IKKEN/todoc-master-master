@@ -8,15 +8,11 @@ import com.cleanup.todoc.model.Project;
 import java.util.List;
 
 /**
- *  Cette classe fournit une interface pour accéder aux données des projets.
- *  Elle utilise un objet ProjectDao pour interagir avec la source de données des projets
- *  et expose une méthode getProjects() qui retourne un objet LiveData<List<Project>>
- *  contenant la liste des projets.
+ * Cette classe agit comme une couche intermédiaire entre la source de données des projets
+ * et les composants qui ont besoin d'y accéder.
+ * Elle encapsule la logique de récupération des données des projets
+ * et expose une méthode pour obtenir les projets sous forme d'objet LiveData<List<Project>>.
  */
-
-// Le Repository encapsule la logique de récupération et de gestion des données provenant de différentes
-// sources telles que des bases de données, des services Web ou des caches.
-// Favorise une bonne séparation des responsabilités
 public class ProjectDataRepository {
     private final ProjectDao mProjectDao;
 

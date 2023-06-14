@@ -18,8 +18,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Le TaskAdaper est un sous-traitant de la MAinActivity
- * Seule la MainActivity communique avec le ViewModel
+ * cette classe gère l'affichage des tâches dans le RecyclerView et permet leur suppression
+ * en utilisant un écouteur approprié.
+ * Elle est utilisée par la classe MainActivity pour afficher et manipuler les tâches dans l'application.
+ * Le TaskAdaper est un sous-traitant de la MAinActivity, seule la MainActivity communique avec le ViewModel.
  */
 
 public class TasksAdapter extends RecyclerView.Adapter<TasksAdapter.TaskViewHolder> {
@@ -62,7 +64,7 @@ public class TasksAdapter extends RecyclerView.Adapter<TasksAdapter.TaskViewHold
     }
 
     // cette méthode met à jour la liste de projets actuelle avec une nouvelle liste fournie
-    // et force la régénération du RecyclerView pour refléter les modifications et mettre à jour l'affichage.
+    // et force la regénération du RecyclerView pour refléter les modifications et mettre à jour l'affichage.
     // Permettre à l'appelant (MainActivity) de mettre à jour la liste de projet de cet adapteur
     void updateProjects(@NonNull final List<Project> projects) {
         this.projects = projects;

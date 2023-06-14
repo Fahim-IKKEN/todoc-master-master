@@ -14,7 +14,9 @@ import androidx.room.PrimaryKey;
 import java.util.Comparator;
 
 /**
- * Modèle pour les tâches de l'application.
+ * Cette classe représente un modèle de tâche dans l'application et fournit des méthodes pour accéder et manipuler
+ * les informations de la tâche, telles que son identifiant, son nom, son projet associé et son horodatage de création.
+ * Elle offre également des comparateurs pour trier les tâches selon différents critères.
  */
 @Entity(tableName = "task", // Marque cette classe en tant qu'entité.
         foreignKeys = @ForeignKey(entity = Project.class,

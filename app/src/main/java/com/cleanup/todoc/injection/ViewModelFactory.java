@@ -12,11 +12,11 @@ import com.cleanup.todoc.viewmodel.TaskViewModel;
 import java.util.concurrent.Executor;
 
 /**
- * La Factory pour ViewModels indispensable pour que le ViewModel puisse accéder à la source de données
+ * Cette classe est une factory qui crée des instances de ViewModels en utilisant
+ * les sources de données appropriées et l'exécuteur.
+ * Elle facilite la création des ViewModels en encapsulant les détails d'implémentation et d'instanciation,
+ * en fournissant une interface simple pour créer les ViewModels nécessaires à partir des sources de données spécifiées.
  */
-
-// Elle fournit une interface pour créer des objets d'un type donné,
-// tout en cachant les détails de l'implémentation et de l'instanciation.
 public class ViewModelFactory implements ViewModelProvider.Factory {
 
     /**

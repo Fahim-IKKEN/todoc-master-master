@@ -9,14 +9,11 @@ import com.cleanup.todoc.model.Task;
 import java.util.List;
 
 /**
- * Cette classe fournit une interface pour accéder et manipuler les données des tâches.
- * Elle utilise un objet TaskDao pour interagir avec la source de données des tâches
- * et expose des méthodes pour obtenir, créer et supprimer des tâches.
+ *Cette classe agit comme une couche intermédiaire entre la source de données des tâches
+ * et les composants qui ont besoin d'accéder à ces données.
+ * Elle encapsule la logique de récupération, création et suppression des tâches en exposant
+ * des méthodes pour effectuer ces opérations.
  */
-
-// Le Repository encapsule la logique de récupération et de gestion des données provenant de différentes
-// sources telles que des bases de données, des services Web ou des caches.
-// Favorise une bonne séparation des responsabilités
 public class TaskDataRepository {
 
     private final TaskDao mTaskDao;

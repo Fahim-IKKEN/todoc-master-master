@@ -11,7 +11,10 @@ import com.cleanup.todoc.model.Task;
 import java.util.List;
 
 /**
- * DAO pour l'entité Tâche
+ *  Cette interface définit les méthodes pour récupérer toutes les tâches de la base de données, insérer
+ *  nouvelle, et supprimer une existante.
+ *  Elle utilise des annotations Room pour définir les requêtes SQL correspondantes.
+ *  Le DAO permet d'abstraire les détails de l'accès aux données et de fournir une interface simple pour interagir avec la table "task" de la base de données.
  */
 @Dao // Objet d'accès aux données.
 public interface TaskDao {

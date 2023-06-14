@@ -16,9 +16,9 @@ import com.cleanup.todoc.model.Task;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
- * La base de données Room qui contient les tables Tâche et Projet
+ * Cette classe représente la base de données Room de l'application, elle gère la création et l'instance singleton de la base de données,
+ * pré-remplit la table "project" avec des données prédéfinies, et fournit les DAO pour accéder aux données.
  */
-
 @Database(entities={Project.class, Task.class}, version=1, exportSchema=false)
 public abstract class TodocDatabase extends RoomDatabase {
 

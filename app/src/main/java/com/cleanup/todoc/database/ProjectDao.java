@@ -10,7 +10,9 @@ import com.cleanup.todoc.model.Project;
 import java.util.List;
 
 /**
- * DAO pour l'entité Projet
+ * Cette interface définit les méthodes pour récupérer tous les projets de la base de données
+ * et insérer de nouveaux. Elle utilise des annotations Room pour définir les requêtes SQL correspondantes.
+ * Le DAO permet d'abstraire les détails de l'accès aux données et de fournir une interface simple pour interagir avec la table "project" de la base de données.
  */
 @Dao // Objet d'accès aux données.
 public interface ProjectDao {

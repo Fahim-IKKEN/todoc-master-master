@@ -33,9 +33,9 @@ import java.util.List;
 import androidx.lifecycle.ViewModelProvider;
 
 /**
- * Cette classe représente l'activité principale de l'application Android
- * et est responsable de l'affichage de l'interface utilisateur
- * et de la gestion des événements provenant de l'adaptateur.
+ * la classe MainActivity gère l'interface utilisateur de l'application,
+ * les événements liés aux tâches et la communication avec le ViewModel
+ * pour effectuer des opérations sur les tâches.
  */
 public class MainActivity extends AppCompatActivity implements TasksAdapter.DeleteTaskListener {
 
@@ -290,7 +290,7 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
     }
 
     /**
-     * On met à jour la liste des projets dans l'interface utilisateur en utilisant l'adaptateur,
+     * On met à jour la liste des projets dans l'interface utilisateur en utilisant l'adapter,
      * et en remplaçant la liste actuelle par la nouvelle liste de projets fournie.
      */
     private void updateProjects(List<Project> projects){

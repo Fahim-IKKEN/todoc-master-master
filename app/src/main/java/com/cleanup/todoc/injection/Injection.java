@@ -10,12 +10,10 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
 /**
- * Injecteur de dépendances pour obtenir des instances de modèles de vue.
+ * Cette classe fournit des méthodes pour créer et fournir les dépendances nécessaires aux modèles de vue de l'application,
+ * en utilisant les instances de ProjectDataRepository, TaskDataRepository et Executor.
+ * L'utilisation de cet injecteur de dépendances facilite la gestion des dépendances et favorise la modularité et la réutilisabilité du code.
  */
-
-// Permet de simplifier la gestion des dépendances.
-// Facilite la création et la fourniture d'instances de dépendances,
-// réduit les dépendances directes entre les classes et favorise la modularité et la réutilisabilité du code
 public class Injection {
 
     /**
